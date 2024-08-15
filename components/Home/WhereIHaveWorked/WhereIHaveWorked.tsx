@@ -22,7 +22,9 @@ export default function WhereIHaveWorked() {
         return <ShoukatKhanum />;
     }
   };
-  const [DescriptionJob, setDescriptionJob] = React.useState("Webwrite Inc.");
+  const [DescriptionJob, setDescriptionJob] = React.useState(
+    "React Native Developer"
+  );
   return (
     <div
       data-aos="fade-up"
