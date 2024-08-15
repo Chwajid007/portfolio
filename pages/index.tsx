@@ -72,7 +72,7 @@ export default function Home() {
   const meta = {
     title: "Wajid Ali - Software Engineer",
     description: `Experienced full-stack software engineer deriving in making efficient solutions. Get in touch with me to know more.`,
-    image: "/jamshaid.png",
+    image: "/wajidali.png",
     type: "website",
   };
   const isProd = process.env.NODE_ENV === "production";

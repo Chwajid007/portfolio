@@ -19,7 +19,7 @@ export default function Logo(props: { finishedLoading: boolean }) {
           className="absolute h-full w-full flex justify-center items-center text-lg font-Header text-AAsecondary"
         >
           <Image
-            src={"/jamshaid.png"}
+            src={"/wajidali.png"}
             height={40}
             width={40}
             alt="Wajid Ali logo"
