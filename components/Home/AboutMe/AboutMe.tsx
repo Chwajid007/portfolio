@@ -62,13 +62,13 @@ export default function AboutMe(props) {
           <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm ">
             <div className="font-Header ">
               <span className="text-gray-400 ">
-                Hello! I'm Wajid Ali Zulfiqar, a dedicated Mobile App Developer
+                Hello! I&apos;m Wajid Ali Zulfiqar, a dedicated Mobile App Developer
                 with over 2 years of experience in
                 <span className="text-AAsecondary">
                   {" "}
                   React Native, JavaScript, and TypeScript
                 </span>
-                . I've successfully delivered more than 10 mobile applications,
+                . I&apos;ve successfully delivered more than 10 mobile applications,
                 seamlessly integrating technologies like
                 <span className="text-AAsecondary">
                   {" "}
@@ -76,7 +76,7 @@ export default function AboutMe(props) {
                 </span>
                 , which reduced deployment times by 30%. My journey also
                 includes launching 3 live apps on Google Play and Apple Store,
-                where I've consistently optimized systems for peak performance
+                where I&apos;ve consistently optimized systems for peak performance
                 and scalability.
               </span>
             </div>
@@ -91,14 +91,14 @@ export default function AboutMe(props) {
                 <span className="text-AAsecondary">
                   Node.js, Express.js, and Firebase
                 </span>
-                . I'm passionate about DevOps and cloud infrastructure, always
+                . I&apos;m passionate about DevOps and cloud infrastructure, always
                 aiming to push the boundaries of what’s possible.
                 <br className="2xl:block hidden" />
                 <br className="2xl:block hidden" />
                 Beyond coding, I have a deep commitment to teamwork, whether
-                it's mentoring junior developers or participating in Agile
-                ceremonies. If you're looking for someone to bring your mobile
-                app ideas to life with efficiency and creativity, let's
+                it&apos;s mentoring junior developers or participating in Agile
+                ceremonies. If you&apos;re looking for someone to bring your mobile
+                app ideas to life with efficiency and creativity, let&apos;s
                 collaborate and make it happen!
               </span>
             </div>
