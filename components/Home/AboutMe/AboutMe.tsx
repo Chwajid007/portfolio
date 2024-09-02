@@ -63,7 +63,7 @@ export default function AboutMe(props) {
             <div className="font-Header ">
               <span className="text-gray-400 ">
                 Hello! I&apos;m Wajid Ali Zulfiqar, a dedicated Mobile App Developer
-                with over 3 years of experience in
+                with over the years of experience in
                 <span className="text-AAsecondary">
                   {" "}
                   React Native, JavaScript, and TypeScript

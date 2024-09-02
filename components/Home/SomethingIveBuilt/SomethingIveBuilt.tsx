@@ -43,13 +43,15 @@ export default function SomethingIveBuilt() {
           {/* Left image */}
           <div className="hidden bg-AAprimary z-10 py-4 absolute md:grid grid-cols-12 w-full h-full content-center">
             <div className="relative rounded w-full h-full col-span-7">
-              <a href="https://fightlife.com" target="_blank" rel="noreferrer">
+              <a 
+              //href="https://fightlife.com" 
+              target="_blank" rel="noreferrer">
                 <div className="absolute w-full h-full rounded bg-AAprimary transition-opacity opacity-30 hover:opacity-0 hover:cursor-pointer duration-300"></div>
               </a>
               <Img
-                src="/fightlife.png"
+                src="/fighLife.png"
                 alt="Project Screen shot"
-                className="w-full rounded h-full"
+                className="w-full rounded h-full h-3/4"
               />
             </div>
           </div>
@@ -59,9 +61,9 @@ export default function SomethingIveBuilt() {
             <div className="px-8 w-full h-full bg-opacity-70 z-0">
               <div className="relative w-full h-full">
                 <Img
-                  src="/fightlife.png"
+                  src="/fighLife.png"
                   alt="Project Screen shot"
-                  className="w-full h-full"
+                  className="w-full h-full h-3/4"
                 />
               </div>
             </div>
@@ -72,7 +74,7 @@ export default function SomethingIveBuilt() {
                   Recent Project
                 </span>
                 <a
-                  href="https://fightlife.com"
+                 // href="https://fightlife.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -96,13 +98,16 @@ export default function SomethingIveBuilt() {
               </div>
               <ul className="flex flex-wrap w-full text-gray-300 md:text-gray-400 text-sm font-Text2 md:justify-end">
                 <span className="pr-4 z-10">Fitness App</span>
-                <span className="pr-4 z-10">React.js</span>
+                <span className="pr-4 z-10">React Native</span>
                 <span className="pr-4 z-10">Node.js</span>
+                <span className="pr-4 z-10">Redux (RTK)</span>
                 <span className="pr-4 z-10">Stripe</span>
+                <span className="pr-4 z-10">Firebase</span>
+
               </ul>
               <div className="z-10 flex flex-row space-x-5">
                 <a
-                  href="https://fightlife.com"
+                 // href="https://fightlife.com"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -121,7 +126,7 @@ export default function SomethingIveBuilt() {
           {/* Left image */}
           <div className="hidden bg-AAprimary z-10 py-4 absolute md:grid grid-cols-12 w-full h-full content-center">
             <div className="relative rounded w-full h-full col-start-6 col-span-7">
-              <a href="https://coachme.com" target="_blank" rel="noreferrer">
+              <a href="https://apps.apple.com/gb/app/coach-me/id6446630726" target="_blank" rel="noreferrer">
                 <div className="absolute w-full h-full rounded bg-AAprimary transition-opacity opacity-50 hover:opacity-0 hover:cursor-pointer duration-300"></div>
               </a>
               <Img
@@ -151,7 +156,7 @@ export default function SomethingIveBuilt() {
                   Recent Project
                 </span>
                 <a
-                  href="https://coachme.com"
+                  href="https://apps.apple.com/gb/app/coach-me/id6446630726"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -182,12 +187,12 @@ export default function SomethingIveBuilt() {
               </div>
               <ul className="flex flex-wrap w-full text-gray-300 md:text-gray-400 text-sm font-Text2 md:justify-start">
                 <span className="pr-4 z-10">Fitness App</span>
-                <span className="pr-4 z-10">Wearable Tech</span>
+                <span className="pr-4 z-10">Cross Platform Integration</span>
                 <span className="pr-4 z-10">AI Integration</span>
-                <span className="pr-4 z-10">React.js</span>
+                <span className="pr-4 z-10">Socket.IO</span>
               </ul>
               <div className="z-10 flex flex-row space-x-5">
-                <a href="https://coachme.com" target="_blank" rel="noreferrer">
+                <a href="https://apps.apple.com/gb/app/coach-me/id6446630726" target="_blank" rel="noreferrer">
                   <ExternalLink url={""} router={router} />
                 </a>
               </div>
@@ -204,16 +209,16 @@ export default function SomethingIveBuilt() {
           <div className="hidden bg-AAprimary z-10 py-4 absolute md:grid grid-cols-12 w-full h-full content-center">
             <div className="relative rounded w-full h-full col-span-7">
               <a
-                href="https://clinicalapp.com"
+               // href="https://clinicalapp.com"
                 target="_blank"
                 rel="noreferrer"
               >
                 <div className="absolute w-full h-full rounded bg-AAprimary transition-opacity opacity-50 hover:opacity-0 hover:cursor-pointer duration-300"></div>
               </a>
               <Img
-                src="/clinicalapp.png"
+                src="/clinicalApp.png"
                 alt="Project Screen shot"
-                className="w-full rounded h-full"
+                className="w-full rounded h-full h-3/4"
               />
             </div>
           </div>
@@ -226,7 +231,7 @@ export default function SomethingIveBuilt() {
                 <Img
                   src="/clinicalapp.png"
                   alt="Project Screen shot"
-                  className="w-full h-full"
+                  className="w-full h-full h-3/4"
                 />
               </div>
             </div>
@@ -237,7 +242,7 @@ export default function SomethingIveBuilt() {
                   Recent Project
                 </span>
                 <a
-                  href="https://clinicalapp.com"
+                  //href="https://clinicalapp.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -273,12 +278,13 @@ export default function SomethingIveBuilt() {
               <ul className="flex flex-wrap w-full text-gray-300 md:text-gray-400 text-sm font-Text2 md:justify-start">
                 <span className="pr-4 z-10">HIPAA Compliance</span>
                 <span className="pr-4 z-10">Role-Based Access</span>
-                <span className="pr-4 z-10">Telehealth</span>
-                <span className="pr-4 z-10">Patient Management</span>
+                <span className="pr-4 z-10">OAuth</span>
+                <span className="pr-4 z-10">Push Notifications</span>
+                <span className="pr-4 z-10">Web RTC</span>
               </ul>
               <div className="z-10 flex flex-row space-x-5">
                 <a
-                  href="https://clinicalapp.com"
+                  //href="https://clinicalapp.com"
                   target="_blank"
                   rel="noreferrer"
                 >

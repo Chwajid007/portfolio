@@ -78,7 +78,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
       >
         Experienced{" "}
         <span className="text-AAsecondary">Mobile App Developer</span> with{" "}
-        <span className="text-AAsecondary">2+ years</span> of expertise in{" "}
+        <span className="text-AAsecondary">2-3 years</span> of expertise in{" "}
         <span className="text-AAsecondary">React Native</span>, specializing in
         JavaScript and TypeScript technologies, including React, Node.js,
         Express, and Redux. Delivered over{" "}

@@ -50,22 +50,22 @@ export default function Home() {
     }
     setTimeout(() => {
       setShowElement(true);
-    }, 4500);
+    },1);
 
-    setTimeout(() => {
-      setShowThisCantBeReached(false);
-    }, 5400);
+    // setTimeout(() => {
+    //   setShowThisCantBeReached(false);
+    // }, 2000);
     // ? INFORMATIONAL next function will show the component after changing the state of ShowMe
     setTimeout(() => {
       setShowElement(false);
       setShowMe(true);
       context.sharedState.finishedLoading = true;
       context.setSharedState(context.sharedState);
-    }, 10400);
+    }, 7000);
   }, [context, context.sharedState]);
 
   useEffect(() => {
-    Aos.init({ duration: 2000, once: true });
+    Aos.init({ duration: 1000, once: true });
   }, []);
 
   console.log("website is rendering...");
@@ -98,13 +98,13 @@ export default function Home() {
       </Head>
 
       <div className="relative snap-mandatory min-h-screen bg-AAprimary w-full ">
-        {context.sharedState.finishedLoading ? (
+        {/* {context.sharedState.finishedLoading ? (
           <></>
         ) : ShowThisCantBeReached ? (
           <ThisCantBeReached />
         ) : (
           <></>
-        )}
+        )} */}
         {context.sharedState.finishedLoading ? (
           <></>
         ) : ShowElement ? (

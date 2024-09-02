@@ -65,7 +65,7 @@ const Header = (props: { finishedLoading: boolean; sectionsRef }) => {
   useEffect(() => {
     setTimeout(() => {
       setShowElement(true);
-    }, 10400);
+    }, 1);
   }, []);
 
   console.log("rotate from header : ", rotate);
@@ -92,7 +92,7 @@ const Header = (props: { finishedLoading: boolean; sectionsRef }) => {
         animate={{ opacity: 1 }}
         // changed from 10.4 to 1
         transition={{
-          opacity: { delay: props.finishedLoading ? 0 : 9.4, duration: 0 },
+          opacity: { delay: props.finishedLoading ? 0 : 5.4, duration: 0 },
         }}
         className={`w-full fixed ${
           ShowElement ? `bg-opacity-70 shadow-xl` : `bg-opacity-0 `

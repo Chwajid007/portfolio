@@ -1,10 +1,12 @@
 import React from "react";
-import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
+
 const Startup = (props) => {
   let WidthBy2 = 0;
   let HeightBy2 = 0;
   let greaterThanSmall = false;
+  
   if (typeof window !== "undefined") {
     if (window.innerWidth > 768) {
       WidthBy2 = window.innerWidth / 2 - 48 - 20;
@@ -22,7 +24,7 @@ const Startup = (props) => {
     <motion.div
       initial={{ opacity: 1 }}
       animate={{ opacity: 0 }}
-      transition={{ opacity: { delay: 4.9, duration: 0 } }}
+      transition={{ opacity: { delay: 9900 / 1000, duration: 0 } }} // Fade out after 9.9 seconds
       className="absolute h-full w-full flex justify-center items-center bg-StartupBackground"
     >
       <motion.div
@@ -34,20 +36,20 @@ const Startup = (props) => {
           scale: greaterThanSmall ? "57%" : "50%",
         }}
         transition={{
-          opacity: { delay: 3, duration: 1.5 },
-          x: { duration: 0.5, delay: 4.5 },
-          y: { duration: 0.5, delay: 4.5 },
-          scale: { duration: 0.5, delay: 4.5 },
+          opacity: { delay: 3000 / 1000, duration: 1500 / 1000 }, // Delay 3 seconds, animate for 1.5 seconds
+          x: { duration: 500 / 1000, delay: 9500 / 1000 }, // Move after 9.5 seconds
+          y: { duration: 500 / 1000, delay: 9500 / 1000 },
+          scale: { duration: 500 / 1000, delay: 9500 / 1000 },
         }}
-        className="relative  h-24 w-24 flex justify-center items-center"
+        className="relative h-24 w-24 flex justify-center items-center"
       >
         <motion.div
           initial={{ scale: 0, x: 0 }}
           animate={{ scale: 1, rotate: 90, x: 38 }}
           transition={{
-            scale: { duration: 1.5 },
-            rotate: { delay: 0.5, duration: 0.5 },
-            x: { delay: 0.8, duration: 1 },
+            scale: { duration: 1500 / 1000 }, // Scale for 1.5 seconds
+            rotate: { delay: 500 / 1000, duration: 500 / 1000 }, // Rotate after 0.5 seconds
+            x: { delay: 800 / 1000, duration: 1000 / 1000 }, // Move after 0.8 seconds
           }}
           className="absolute h-2 w-12 bg-AAsecondary rounded "
         ></motion.div>
@@ -55,9 +57,9 @@ const Startup = (props) => {
           initial={{ scale: 0, x: 0 }}
           animate={{ scale: 1, rotate: 90, x: -39 }}
           transition={{
-            scale: { duration: 1.5 },
-            rotate: { delay: 0.5, duration: 0.5 },
-            x: { delay: 0.8, duration: 1 },
+            scale: { duration: 1500 / 1000 }, // Scale for 1.5 seconds
+            rotate: { delay: 500 / 1000, duration: 500 / 1000 }, // Rotate after 0.5 seconds
+            x: { delay: 800 / 1000, duration: 1000 / 1000 }, // Move after 0.8 seconds
           }}
           className="absolute h-2 w-12 bg-AAsecondary rounded "
         ></motion.div>
@@ -65,11 +67,11 @@ const Startup = (props) => {
           initial={{ opacity: 0, scale: 0, x: 0, y: 0 }}
           animate={{ opacity: 1, scale: 1.05, rotate: 35, x: 18, y: -34 }}
           transition={{
-            opacity: { delay: 2, duration: 0 },
-            scale: { duration: 2.5 },
-            rotate: { delay: 0.5, duration: 0.5 },
-            y: { delay: 1.2, duration: 2 },
-            x: { delay: 1.5, duration: 0.5 },
+            opacity: { delay: 2000 / 1000, duration: 0 }, // Fade in after 2 seconds
+            scale: { duration: 2500 / 1000 }, // Scale for 2.5 seconds
+            rotate: { delay: 500 / 1000, duration: 500 / 1000 }, // Rotate after 0.5 seconds
+            y: { delay: 1200 / 1000, duration: 2000 / 1000 }, // Move after 1.2 seconds
+            x: { delay: 1500 / 1000, duration: 500 / 1000 }, // Move after 1.5 seconds
           }}
           className="absolute h-2 w-12 bg-AAsecondary rounded "
         ></motion.div>
@@ -77,11 +79,11 @@ const Startup = (props) => {
           initial={{ opacity: 0, scale: 0, x: 0, y: 0 }}
           animate={{ opacity: 1, scale: 1.05, rotate: -35, x: -18, y: -34 }}
           transition={{
-            opacity: { delay: 2, duration: 0 },
-            scale: { duration: 2.5 },
-            rotate: { delay: 0.5, duration: 0.5 },
-            y: { delay: 1.2, duration: 2 },
-            x: { delay: 1.5, duration: 0.5 },
+            opacity: { delay: 2000 / 1000, duration: 0 }, // Fade in after 2 seconds
+            scale: { duration: 2500 / 1000 }, // Scale for 2.5 seconds
+            rotate: { delay: 500 / 1000, duration: 500 / 1000 }, // Rotate after 0.5 seconds
+            y: { delay: 1200 / 1000, duration: 2000 / 1000 }, // Move after 1.2 seconds
+            x: { delay: 1500 / 1000, duration: 500 / 1000 }, // Move after 1.5 seconds
           }}
           className="absolute h-2 w-12 bg-AAsecondary rounded "
         ></motion.div>
@@ -89,11 +91,11 @@ const Startup = (props) => {
           initial={{ opacity: 0, scale: 0, x: 0, y: 0 }}
           animate={{ opacity: 1, scale: 1.05, rotate: -35, x: 18, y: 34 }}
           transition={{
-            opacity: { delay: 2, duration: 0 },
-            scale: { duration: 2.5 },
-            rotate: { delay: 0.5, duration: 0.5 },
-            y: { delay: 1.2, duration: 2 },
-            x: { delay: 1.5, duration: 0.5 },
+            opacity: { delay: 2000 / 1000, duration: 0 }, // Fade in after 2 seconds
+            scale: { duration: 2500 / 1000 }, // Scale for 2.5 seconds
+            rotate: { delay: 500 / 1000, duration: 500 / 1000 }, // Rotate after 0.5 seconds
+            y: { delay: 1200 / 1000, duration: 2000 / 1000 }, // Move after 1.2 seconds
+            x: { delay: 1500 / 1000, duration: 500 / 1000 }, // Move after 1.5 seconds
           }}
           className="absolute h-2 w-12 bg-AAsecondary rounded "
         ></motion.div>
@@ -101,18 +103,18 @@ const Startup = (props) => {
           initial={{ opacity: 0, scale: 0, x: 0, y: 0 }}
           animate={{ opacity: 1, scale: 1.05, rotate: 35, x: -18, y: 34 }}
           transition={{
-            opacity: { delay: 2, duration: 0 },
-            scale: { duration: 2.5 },
-            rotate: { delay: 0.5, duration: 0.5 },
-            y: { delay: 1.2, duration: 2 },
-            x: { delay: 1.5, duration: 0.5 },
+            opacity: { delay: 2000 / 1000, duration: 0 }, // Fade in after 2 seconds
+            scale: { duration: 2500 / 1000 }, // Scale for 2.5 seconds
+            rotate: { delay: 500 / 1000, duration: 500 / 1000 }, // Rotate after 0.5 seconds
+            y: { delay: 1200 / 1000, duration: 2000 / 1000 }, // Move after 1.2 seconds
+            x: { delay: 1500 / 1000, duration: 500 / 1000 }, // Move after 1.5 seconds
           }}
           className="absolute h-2 w-12 bg-AAsecondary rounded "
         ></motion.div>
         <motion.span
           initial={{ scale: 0, y: -4, x: -1 }}
           animate={{ scale: 1 }}
-          transition={{ scale: { delay: 1.5, duration: 1.5 } }}
+          transition={{ scale: { delay: 1500 / 1000, duration: 1500 / 1000 } }} // Scale after 1.5 seconds
           className="text-AAsecondary font-Text2 text-4xl"
         >
           WA
@@ -121,4 +123,5 @@ const Startup = (props) => {
     </motion.div>
   );
 };
+
 export default Startup;
